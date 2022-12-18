@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ua"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Перейменування вулиць міста Кам'янське</title>
+    <meta name="description" content="Он-лайн довідник перейменувань вілиць та місць Кам'янське у розрізі районів">
+    <meta name="keywords" content="Днепр Дніпро новые названия улиц Днепродзержинск 2022, новые названия улиц Кам'янське, новые имена улиц Днепродзержинск, переименование улиц, перечень новых названий улиц Днепродзержинск, полный список названий, переименование улиц и площадей, распоряжение о переименовании улиц, слушания о переименовании, переименование и декоммунизация, полный список новых названий, нові назви Кам'янське">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container container-main">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="display-3">Перейменування назв вулиць та місць міста Кам'янське</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 d-xs-none d-md-block">
+          <ul class="list-group-flush margin-from-logo padding-left-none" id="navBar"></ul>
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+          <div class="container-fluid container-main-background margin-from-logo">
+            <h1 class="main-title">Про проект</h1>
+            <article>
+                <h4>Чи потрібна проекту допомога?</h4><p>Цій сервіс створений дніпрянами для дніпрян. Все бескоштовно. Якщо ви маєте сили та бажання покращити проект - приєднуйтесь до нас <a href="https://github.com/deivan/kamyanske.rename">у мережі проектів GitHub</a></p>
+                <br />
+                <p>Малюнки та побажання ласкаво просимо слати за адресою: <span style="color:#00a;text-decoration:underline;font-weight:700">ivan@demenkov.dp.ua</span></p>
+              </article>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 justify-content-md-center this-is-footer">
+          
+        </div>
+      </div>
+    </div>
+    <a href="https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi" class="em-ribbon" style="position: absolute; left:0; top:0; width: 90px; height: 90px; background: url('http://stfalcon.github.io/stopwar/img/stop-war-in-ukraine.png'); z-index: 2013; border: 0;" title="Do something to stop this war! Russians are killing our children and civilians!" target="_blank"></a>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/navMenu.js"></script>
+    <script>
+        const navBar = document.querySelector('#navBar');
+        const donate = document.createElement('DIV');
+        let menuContent = '';
+        let area = 'about'
+
+        NAV_MENU.forEach(item => {
+            menuContent += `
+                <li class="list-group-item ${area === item.area ? 'active' : ''}">
+                <a href="${item.link}">${item.text}</a>
+                </li>
+            `;
+        });
+        navBar.innerHTML = menuContent;
+
+        donate.classList.add('donation');
+        donate.innerHTML = `
+            <p>Проект потребує систематичнмх витрат на підтримку серверу та домену, якщо у вас є можливість допомогти, - натисніть кнопку нижче, щиро дякую:</p>
+            <form action="https://www.paypal.com/donate" method="post" target="_top">
+                <input type="hidden" name="hosted_button_id" value="LMVNT3JF6TR66" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_UA/i/scr/pixel.gif" width="1" height="1" />
+            </form>
+        `;
+        navBar.parentElement.appendChild(donate);
+    </script>
+  </body>
+</html>
