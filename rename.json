@@ -1,18 +1,41 @@
 {
-    "lastUpdate": "",
-    "r51": {
-        "oldAreaName": "",
-        "newAreaName": "",
+    "lastUpdate": "1673316488677",
+    "r3": {
+        "oldAreaName": "Баглійський",
+        "newAreaName": "Південний",
+        "objects": [
+            {
+                "type": "street",
+                "newType": "street",
+                "oldName": "Алтайська",
+                "newName": "Євгена Мельнікова",
+                "restored": false,
+                "link": {
+                    "href": "https://mis.dp.ua/news-ua/u-vijni-z-rosijskymy-okupantamy-zagynuv-kamyanchanyn-yevgen-melnikov/",
+                    "type": 0
+                    }
+            },
+            {
+                "type": "lane",
+                "newType": "lane",
+                "oldName": "Алтайский",
+                "newName": "Євгена Мельнікова",
+                "restored": false,
+                "link": {
+                    "href": "https://mis.dp.ua/news-ua/u-vijni-z-rosijskymy-okupantamy-zagynuv-kamyanchanyn-yevgen-melnikov/",
+                    "type": 0
+                    }
+            },
+        ]
+    },
+    "r6": {
+        "oldAreaName": "Дніпровський",
+        "newAreaName": "Дніпровський",
         "objects": []
     },
-    "r52": {
-        "oldAreaName": "",
-        "newAreaName": "",
-        "objects": []
-    },
-    "r53": {
-        "oldAreaName": "",
-        "newAreaName": "",
+    "r9": {
+        "oldAreaName": "Заводський",
+        "newAreaName": "Заводський",
         "objects": []
     }
 }
